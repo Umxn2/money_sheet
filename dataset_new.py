@@ -246,9 +246,9 @@ money_per_day_final, dates_final = get_array_for_month_final()
 money_all=money_per_day_final+money_per_day
 dates_all = dates_final+date
 #print(money_all, dates_all)
-os.remove('dateset_ball.csv')
+os.remove('dateset.csv')
 
-with open('dateset_ball.csv', 'w', newline='') as file:
+with open('dateset.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     field = ["DATE", "MONEY_PER_DATE"]
     writer.writerow(field)
